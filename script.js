@@ -21,10 +21,11 @@ function compute()
     //get result element and update result by concatenating a lot of strings
     r = document.getElementById("result");
     r.innerHTML = 
-        '<p>' + 'If you deposit ' + '<strong>' + principal + '</strong>' + ', ' + 
-        'at an interest rate of ' + '<strong>' + rate + '</strong>' + '%' + ', ' +
-        'You will receive an amount of ' + '<strong>' + amount + '</strong>' + ', ' +
-        'in the year ' + '<strong>' + futureYear  + '</strong>' + '.' + '</p>';
+        '<p> If you deposit <strong>' + principal + 
+        '</strong>, at an interest rate of <strong>' + rate + 
+        '%</strong>, You will receive an amount of <strong>' + amount + 
+        '</strong>, in the year <strong>' + futureYear + 
+        '</strong>.</p>';
 //     r.innerText = interest + ' ' + years;
 
 }
