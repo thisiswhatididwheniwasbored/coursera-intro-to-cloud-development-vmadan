@@ -18,7 +18,7 @@ function compute()
         'If you deposit ' + principal + ', ' + 
         'at an interest rate of ' + rate + '%' + ', ' +
         'You will receive an amount of ' + amount + ', ' +
-        'in the year' + years + '';
+        'in the year ' + futureYear + '';
 //     r.innerText = interest + ' ' + years;
 
 }
