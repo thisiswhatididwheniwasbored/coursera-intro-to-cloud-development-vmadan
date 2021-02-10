@@ -2,6 +2,11 @@ function compute()
 {
     //declare variables and source them from HTML dom
     principal = document.getElementById("principal").value;
+    if (parseInt(principal,10) <= 0) {
+        alert("Please enter a non-zero positive principal.");
+        principal.focus();
+    }
+
     rate = document.getElementById("rate").value;
     years = document.getElementById("years").value;
     
@@ -16,10 +21,10 @@ function compute()
     //get result element and update result by concatenating a lot of strings
     r = document.getElementById("result");
     r.innerText = 
-        'If you deposit ' + principal + ', ' + 
-        'at an interest rate of ' + rate + '%' + ', ' +
-        'You will receive an amount of ' + amount + ', ' +
-        'in the year ' + futureYear + '';
+        'If you deposit ' + '<strong>' + principal + '</strong>' + ', ' + 
+        'at an interest rate of ' + '<strong>' + rate + '</strong>' + '%' + ', ' +
+        'You will receive an amount of ' + '<strong>' + amount + '</strong>' + ', ' +
+        'in the year ' + '<strong>' + futureYear  + '</strong>' + '.';
 //     r.innerText = interest + ' ' + years;
 
 }
@@ -31,4 +36,3 @@ function updateRate() {
     rateValue = document.getElementById("rate-value")
     rateValue.innerText = document.getElementById("rate").value;
 }
-        
