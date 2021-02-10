@@ -13,6 +13,7 @@ function compute()
     currentYear = new Date().getFullYear();
     futureYear = parseInt(currentYear,10) + parseInt(years,10);
 
+    //get result element and update result by concatenating a lot of strings
     r = document.getElementById("result");
     r.innerText = 
         'If you deposit ' + principal + ', ' + 
@@ -26,6 +27,7 @@ function compute()
 
 //function to update Rate range on span 
 function updateRate() {
+    //get rateValue element from HTML dom and update innerText value to the updated rate from slider.
     rateValue = document.getElementById("rate-value")
     rateValue.innerText = document.getElementById("rate").value;
 }
