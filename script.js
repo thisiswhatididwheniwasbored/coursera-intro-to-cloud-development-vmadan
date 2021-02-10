@@ -7,6 +7,7 @@ function compute()
     
     //calculate interest formula
     interest = ((principal * years * rate)/100);
+    amount = principal + interest;
     
     //calculate future year by getting current year and adding number of years
     currentYear = new Date().getFullYear();
@@ -14,10 +15,10 @@ function compute()
 
     r = document.getElementById("result");
     r.innerText = 
-        'If you deposit ' + 1000000 + ' \n' + 
-        'at an interest rate of ' + 3.5 + '%' + ' \n' +
-        'You will receive an amount of ' + 175000 + '\n' +
-        'in the year' + + ' \n';
+        'If you deposit ' + principal + ', ' + 
+        'at an interest rate of ' + rate + '%' + ', ' +
+        'You will receive an amount of ' + amount + ', ' +
+        'in the year' + years + '';
 //     r.innerText = interest + ' ' + years;
 
 }
