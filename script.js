@@ -14,7 +14,7 @@ function compute()
 
     r = document.getElementById("result");
     r.innerText = 
-        'If you deposit ' + 1000000 + ' \n'
+        'If you deposit ' + 1000000 + ' \n' + 
         'at an interest rate of ' + 3.5 + '%' + ' \n' +
         'You will receive an amount of ' + 175000 + '\n' +
         'in the year' + + ' \n';
