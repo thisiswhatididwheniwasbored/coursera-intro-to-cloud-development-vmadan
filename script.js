@@ -7,11 +7,11 @@ function compute()
     
     //calculate interest formula
     interest = ((principal * years * rate)/100);
-    amount = parseInt(principal) + parseInt(interest);
+    amount = parseInt(principal,10) + parseInt(interest,10);
     
     //calculate future year by getting current year and adding number of years
     currentYear = new Date().getFullYear();
-    futureYear = parseInt(currentYear) + parseInt(years);
+    futureYear = parseInt(currentYear,10) + parseInt(years,10);
 
     r = document.getElementById("result");
     r.innerText = 
