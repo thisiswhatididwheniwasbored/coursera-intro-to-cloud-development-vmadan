@@ -2,7 +2,7 @@ function compute()
 {
     //declare variables and source them from HTML dom
     principal = document.getElementById("principal").value;
-    if (parseInt(principal,10) <= 0) {
+    if (parseInt(principal,10) <= 0 || parseInt(principal,10) == '') {
         alert("Please enter a non-zero positive principal.");
         principal.focus();
     }
